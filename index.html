@@ -12,6 +12,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="founder.css" />
+  <link rel="stylesheet" href="hero-product.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -51,45 +52,37 @@
         </div>
       </div>
 
-      <div class="hero-visual reveal" aria-label="ASTR product concept">
+      <div class="hero-visual hero-product-visual reveal" aria-label="ASTR product screenshots">
         <div class="orb orb-one"></div>
         <div class="orb orb-two"></div>
-        <div class="app-frame">
-          <div class="app-top">
-            <div class="mini-brand"><span>✦</span> ASTR</div>
-            <span class="live-pill">LIVE COMMUNITY</span>
+
+        <figure class="hero-shot hero-shot-member">
+          <div class="hero-shot-label">
+            <span class="hero-shot-dot"></span>
+            Member experience
           </div>
-          <div class="app-card event-card">
-            <div>
-              <span class="label">TODAY · 6:00 PM</span>
-              <h3>Strength Social</h3>
-              <p>Anytime Fitness · Osborne Village</p>
-            </div>
-            <div class="avatar-stack" aria-label="Attendees">
-              <span>K</span><span>A</span><span>T</span><span>+8</span>
-            </div>
+          <img
+            src="assets/product/discover.webp"
+            alt="ASTR Discover screen showing a recurring Winnipeg fitness event"
+            fetchpriority="high"
+          />
+        </figure>
+
+        <figure class="hero-shot hero-shot-operator">
+          <div class="hero-shot-label">
+            <span class="hero-shot-dot"></span>
+            Operator view
           </div>
-          <div class="app-grid">
-            <div class="metric-card">
-              <span class="label">VERIFIED</span>
-              <strong>QR</strong>
-              <small>attendance</small>
-            </div>
-            <div class="metric-card">
-              <span class="label">AFTERGLOW</span>
-              <strong>↗</strong>
-              <small>connections</small>
-            </div>
-            <div class="metric-card wide">
-              <div>
-                <span class="label">OPERATOR SIGNAL</span>
-                <strong>RSVP → attendance → repeat → conversion</strong>
-              </div>
-              <div class="signal-bars" aria-hidden="true">
-                <i style="height:28%"></i><i style="height:45%"></i><i style="height:66%"></i><i style="height:84%"></i>
-              </div>
-            </div>
-          </div>
+          <img
+            src="assets/product/gym-dashboard.webp"
+            alt="ASTR gym partner dashboard showing community, engagement and conversion metrics"
+            loading="eager"
+          />
+        </figure>
+
+        <div class="hero-built-badge" aria-hidden="true">
+          <span>LIVE MVP</span>
+          <strong>Member network + operator intelligence</strong>
         </div>
       </div>
     </section>
