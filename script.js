@@ -26,3 +26,10 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Hero product proof: use the actual Discover/event experience as the member-facing visual.
+const heroMemberShot = document.querySelector('.hero-shot-member img');
+if (heroMemberShot) {
+  heroMemberShot.src = 'assets/product/event-detail.webp';
+  heroMemberShot.alt = 'ASTR Discover screen showing a recurring Winnipeg fitness event';
+}
