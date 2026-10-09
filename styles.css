@@ -140,6 +140,42 @@ h3{font-size:22px;margin:12px 0 10px}
 .loop-arrow{color:#586175;font-size:24px}
 .operator-callout{margin-top:18px;padding:28px;border-radius:22px;border:1px solid rgba(80,227,194,.18);background:rgba(80,227,194,.04)}
 .operator-callout p{font:600 clamp(20px,2.5vw,30px) "Space Grotesk";line-height:1.35;margin:9px 0 0;max-width:940px}
+.creator-section{
+  background:
+    radial-gradient(circle at 84% 16%,rgba(80,227,194,.11),transparent 24rem),
+    radial-gradient(circle at 12% 78%,rgba(139,92,246,.13),transparent 28rem),
+    #0b0d13;
+  border-bottom:1px solid var(--line);
+}
+.creator-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.creator-economics,.creator-acquisition{
+  padding:32px;border:1px solid var(--line);border-radius:26px;
+  background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.018));
+}
+.creator-card-head{display:flex;flex-direction:column;gap:8px;margin-bottom:24px}
+.creator-card-head>strong{font:700 clamp(24px,2.7vw,34px) "Space Grotesk";line-height:1.12}
+.econ-row{
+  display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:end;
+  padding:20px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.025)
+}
+.econ-row>div{display:flex;flex-direction:column;gap:4px}
+.econ-row span{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#858da0;font-weight:700}
+.econ-row strong{font:700 30px "Space Grotesk"}
+.econ-row small{color:#929bad}
+.econ-row.highlighted{border-color:rgba(80,227,194,.28);background:rgba(80,227,194,.05)}
+.econ-row.highlighted .econ-result strong{font-size:42px;color:#8ef4df}
+.econ-divider{text-align:center;font:700 11px "Space Grotesk";letter-spacing:.14em;color:#687187;padding:10px 0}
+.econ-note,.creator-note{color:#949daf;margin:22px 0 0;font-size:14px}
+.creator-loop{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.creator-loop-step{
+  min-height:104px;padding:16px;border:1px solid var(--line);border-radius:16px;
+  background:rgba(255,255,255,.025);display:flex;flex-direction:column;justify-content:center
+}
+.creator-loop-step span{font-size:10px;color:#6e778c;font-weight:700}
+.creator-loop-step strong{font:700 17px "Space Grotesk";margin:4px 0 2px}
+.creator-loop-step small{color:#8d96a9}
+.creator-loop-step:last-child{grid-column:1/-1;border-color:rgba(139,92,246,.3);background:rgba(139,92,246,.06)}
+.creator-thesis{margin:18px 0 0;padding:16px;border-radius:16px;background:rgba(255,255,255,.035);font:600 16px "Space Grotesk";line-height:1.5;color:#dbe0ec}
 .timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .timeline-card{padding:28px;border-radius:22px;border:1px solid var(--line);background:rgba(255,255,255,.02)}
 .timeline-card>span{font-size:11px;letter-spacing:.12em;color:#777f94;font-weight:700}
@@ -177,6 +213,7 @@ h3{font-size:22px;margin:12px 0 10px}
   .hero{grid-template-columns:1fr;gap:30px;padding-top:70px}
   .hero-visual{min-height:520px}
   .thesis-grid,.raise-panel{grid-template-columns:1fr;gap:30px}
+  .creator-grid{grid-template-columns:1fr}
   .feature-grid{grid-template-columns:1fr 1fr}
   .flywheel{grid-template-columns:1fr 1fr}
   .loop-arrow{display:none}
@@ -198,6 +235,10 @@ h3{font-size:22px;margin:12px 0 10px}
   .hero-visual{min-height:470px}
   .app-frame{transform:none}
   .feature-grid{grid-template-columns:1fr}
+  .creator-economics,.creator-acquisition{padding:24px}
+  .econ-row{grid-template-columns:1fr}
+  .creator-loop{grid-template-columns:1fr}
+  .creator-loop-step:last-child{grid-column:auto}
   .section{padding:88px 0}
   .flywheel{grid-template-columns:1fr}
   .proof-grid{grid-template-columns:1fr}
